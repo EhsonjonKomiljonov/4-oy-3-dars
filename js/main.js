@@ -71,9 +71,9 @@ let elSearch = [];
 elForm.addEventListener("input", (evt) => {
   evt.preventDefault();
   elRow.innerHTML = "";
-  let elInputVal = elInput.value;
+  let elInputVal = elInput.value.toLocaleLowerCase();
   films.forEach((el) => {
-    if (el.title.includes(elInputVal)) {
+    if (el.title.toLocaleLowerCase().includes(elInputVal)) {
       elSearch.push(el);
     }
   });
@@ -112,7 +112,7 @@ function filmsFiltered(film) {
     elId.classList.add("h4", "text-center", "text-white");
     elImg.setAttribute("src", film[i].poster);
     elImg.setAttribute("class", "d-block mx-auto w-100");
-    elName.innerHTML = film[i].title;
+    elName.innerHTML = (film[i].title);
     elName.classList.add("text-warning", "text-center", "h4", "mt-2");
     elGenres.innerHTML = film[i].genres;
     elGenres.classList.add("w-100", "text-danger", "text-center");
