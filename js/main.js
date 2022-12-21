@@ -71,9 +71,9 @@ let elSearch = [];
 elForm.addEventListener("input", (evt) => {
   evt.preventDefault();
   elRow.innerHTML = "";
-  let elInputVal = elInput.value.toLocaleLowerCase();
+  let elInputVal = elInput.value.toLowerCase();
   films.forEach((el) => {
-    if (el.title.toLocaleLowerCase().includes(elInputVal)) {
+    if (el.title.toLowerCase().includes(elInputVal)) {
       elSearch.push(el);
     }
   });
@@ -112,14 +112,53 @@ function filmsFiltered(film) {
     elId.classList.add("h4", "text-center", "text-white");
     elImg.setAttribute("src", film[i].poster);
     elImg.setAttribute("class", "d-block mx-auto w-100");
-    elName.innerHTML = (film[i].title);
+    elName.innerHTML = film[i].title;
     elName.classList.add("text-warning", "text-center", "h4", "mt-2");
     elGenres.innerHTML = film[i].genres;
     elGenres.classList.add("w-100", "text-danger", "text-center");
     elHeight.innerHTML = film[i].release_date;
     elHeight.classList.add("text-center", "text-light");
   }
-
 }
 
 filmsFiltered(films);
+
+const elSelect2 = document.querySelector(".js-select-two");
+elSelect2.addEventListener("change", () => {
+  // if (elSelect2.value == "id") {
+  //   pokemons.sort((a, b) => {
+  //     if (a.name < b.name && a.name > b.name) {
+  //       return 1;
+  //     }
+  //   });
+  // }
+
+  // ------------------------ USTOZ SHU ID DIGANI BOSILGANDA HAMMASI O'Z HOLIGA QAYTADIGAN QILOMADIM☝ FILMSDAYAM SHUNAQA ----------------------
+
+  if (elSelect2.value != "id") {
+    if (elSelect2.value == "A--Z") {
+      const FILMS__SORT = films.sort((a, b) => {
+        if (a.title < b.title) {
+          return 1;
+        }
+        if (a.title > b.title) {
+          return -1;
+        }
+        return 0;
+      });
+      displayPokemons(FILMS__SORT);
+    }
+    if (elSelect2.value == "Z--A") {
+      const FILMS__SORT = films.sort((a, b) => {
+        if (a.title < b.title) {
+          return -1;
+        }
+        if (a.title > b.title) {
+          return 1;
+        }
+        return 0;
+      });
+      displayPokemons(FILMS__SORT);
+    }
+  }
+});
