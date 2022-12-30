@@ -1,6 +1,6 @@
 var films = [
    {
-      id: "287947",
+      id: 287947,
       title: "Shazam!",
       poster: "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
       overview:
@@ -9,7 +9,7 @@ var films = [
       genres: ["Action", "Comedy", "Fantasy"],
    },
    {
-      id: "299537",
+      id: 299537,
       title: "Captain Marvel",
       poster: "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
       overview:
@@ -18,7 +18,7 @@ var films = [
       genres: ["Action", "Adventure", "Science Fiction"],
    },
    {
-      id: "522681",
+      id: 522681,
       title: "Escape Room",
       poster: "https://image.tmdb.org/t/p/w500/8Ls1tZ6qjGzfGHjBB7ihOnf7f0b.jpg",
       overview:
@@ -27,7 +27,7 @@ var films = [
       genres: ["Thriller", "Action", "Horror", "Science Fiction"],
    },
    {
-      id: "166428",
+      id: 166428,
       title: "How to Train Your Dragon: The Hidden World",
       poster: "https://image.tmdb.org/t/p/w500/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
       overview:
@@ -36,7 +36,7 @@ var films = [
       genres: ["Animation", "Family", "Adventure"],
    },
    {
-      id: "450465",
+      id: 450465,
       title: "Glass",
       poster: "https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg",
       overview:
@@ -45,7 +45,7 @@ var films = [
       genres: ["Documentary"],
    },
    {
-      id: "495925",
+      id: 495925,
       title: "Doraemon the Movie: Nobita's Treasure Island",
       poster: "https://image.tmdb.org/t/p/w500/xiLRClQmKSVAbiu6rgCRzNQjcSX.jpg",
       overview:
@@ -54,7 +54,7 @@ var films = [
       genres: ["Animation"],
    },
    {
-      id: "329996",
+      id: 329996,
       title: "Dumbo",
       poster: "https://image.tmdb.org/t/p/w500/deTOAcMWuHTjOUPQphwcPFFfTQz.jpg",
       overview:
@@ -63,7 +63,7 @@ var films = [
       genres: ["Adventure", "Family", "Fantasy"],
    },
    {
-      id: "299536",
+      id: 299536,
       title: "Avengers: Infinity War",
       poster: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
       overview:
@@ -72,7 +72,7 @@ var films = [
       genres: ["Adventure", "Action", "Science Fiction"],
    },
    {
-      id: "458723",
+      id: 458723,
       title: "Us",
       poster: "https://image.tmdb.org/t/p/w500/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
       overview:
@@ -81,7 +81,7 @@ var films = [
       genres: ["Documentary", "Family"],
    },
    {
-      id: "424783",
+      id: 424783,
       title: "Bumblebee",
       poster: "https://image.tmdb.org/t/p/w500/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg",
       overview:
@@ -90,7 +90,7 @@ var films = [
       genres: ["Action", "Adventure", "Science Fiction"],
    },
    {
-      id: "920",
+      id: 920,
       title: "Cars",
       poster: "https://image.tmdb.org/t/p/w500/qa6HCwP4Z15l3hpsASz3auugEW6.jpg",
       overview:
@@ -99,7 +99,7 @@ var films = [
       genres: ["Animation", "Adventure", "Comedy", "Family"],
    },
    {
-      id: "299534",
+      id: 299534,
       title: "Avengers: Endgame",
       poster: "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
       overview:
@@ -108,7 +108,7 @@ var films = [
       genres: ["Adventure", "Science Fiction", "Action"],
    },
    {
-      id: "324857",
+      id: 324857,
       title: "Spider-Man: Into the Spider-Verse",
       poster: "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
       overview:
@@ -117,7 +117,7 @@ var films = [
       genres: ["Action", "Adventure", "Animation", "Science Fiction", "Comedy"],
    },
    {
-      id: "157433",
+      id: 157433,
       title: "Pet Sematary",
       poster: "https://image.tmdb.org/t/p/w500/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
       overview:
@@ -126,7 +126,7 @@ var films = [
       genres: ["Thriller", "Horror"],
    },
    {
-      id: "456740",
+      id: 456740,
       title: "Hellboy",
       poster: "https://image.tmdb.org/t/p/w500/bk8LyaMqUtaQ9hUShuvFznQYQKR.jpg",
       overview:
@@ -135,7 +135,7 @@ var films = [
       genres: ["Fantasy", "Action"],
    },
    {
-      id: "537915",
+      id: 537915,
       title: "After",
       poster: "https://image.tmdb.org/t/p/w500/bk8LyaMqUtaQ9hUShuvFznQYQKR.jpg",
       overview:
@@ -144,7 +144,7 @@ var films = [
       genres: ["Mystery", "Drama"],
    },
    {
-      id: "485811",
+      id: 485811,
       title: "Redcon-1",
       poster: "https://image.tmdb.org/t/p/w500/vVPrWngVJ2cfYAncBedQty69Dlf.jpg",
       overview:
@@ -153,7 +153,7 @@ var films = [
       genres: ["Action", "Horror"],
    },
    {
-      id: "471507",
+      id: 471507,
       title: "Destroyer",
       poster: "https://image.tmdb.org/t/p/w500/sHw9gTdo43nJL82py0oaROkXXNr.jpg",
       overview:
@@ -162,7 +162,7 @@ var films = [
       genres: ["Horror", "Thriller"],
    },
    {
-      id: "400650",
+      id: 400650,
       title: "Mary Poppins Returns",
       poster: "https://image.tmdb.org/t/p/w500/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg",
       overview:
@@ -171,7 +171,7 @@ var films = [
       genres: ["Documentary"],
    },
    {
-      id: "297802",
+      id: 297802,
       title: "Aquaman",
       poster: "https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
       overview:
@@ -180,7 +180,7 @@ var films = [
       genres: ["Action", "Adventure", "TV Movie"],
    },
    {
-      id: "512196",
+      id: 512196,
       title: "Happy Death Day 2U",
       poster: "https://image.tmdb.org/t/p/w500/4tdnePOkOOzwuGPEOAHp8UA4vqx.jpg",
       overview:
@@ -189,7 +189,7 @@ var films = [
       genres: ["Comedy", "Horror", "Science Fiction"],
    },
    {
-      id: "390634",
+      id: 390634,
       title: "Fate/stay night: Heaven’s Feel II. lost butterfly",
       poster: "https://image.tmdb.org/t/p/w500/nInpnGCjhzVhsASIUAmgM1QIhYM.jpg",
       overview:
@@ -198,7 +198,7 @@ var films = [
       genres: ["Animation", "Action", "Fantasy", "Drama"],
    },
    {
-      id: "500682",
+      id: 500682,
       title: "The Highwaymen",
       poster: "https://image.tmdb.org/t/p/w500/4bRYg4l12yDuJvAfqvUOPnBrxno.jpg",
       overview:
@@ -207,7 +207,7 @@ var films = [
       genres: ["Music"],
    },
    {
-      id: "454294",
+      id: 454294,
       title: "The Kid Who Would Be King",
       poster: "https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg",
       overview:
@@ -216,7 +216,7 @@ var films = [
       genres: ["Action", "Adventure", "Fantasy", "Family"],
    },
    {
-      id: "543103",
+      id: 543103,
       title: "Kamen Rider Heisei Generations FOREVER",
       poster: "https://image.tmdb.org/t/p/w500/kHMuyjlvNIwhCaDFiRwnl45wF7z.jpg",
       overview:
@@ -225,7 +225,7 @@ var films = [
       genres: ["Action", "Adventure", "Science Fiction"],
    },
    {
-      id: "404368",
+      id: 404368,
       title: "Ralph Breaks the Internet",
       poster: "https://image.tmdb.org/t/p/w500/qEnH5meR381iMpmCumAIMswcQw2.jpg",
       overview:
@@ -234,7 +234,7 @@ var films = [
       genres: ["Family", "Animation", "Comedy", "Adventure"],
    },
    {
-      id: "338952",
+      id: 338952,
       title: "Fantastic Beasts: The Crimes of Grindelwald",
       poster: "https://image.tmdb.org/t/p/w500/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg",
       overview:
@@ -243,7 +243,7 @@ var films = [
       genres: ["Adventure", "Fantasy", "Family"],
    },
    {
-      id: "399579",
+      id: 399579,
       title: "Alita: Battle Angel",
       poster: "https://image.tmdb.org/t/p/w500/xRWht48C2V8XNfzvPehyClOvDni.jpg",
       overview:
@@ -252,7 +252,7 @@ var films = [
       genres: ["Action", "Science Fiction"],
    },
    {
-      id: "450001",
+      id: 450001,
       title: "Master Z: Ip Man Legacy",
       poster: "https://image.tmdb.org/t/p/w500/6VxEvOF7QDovsG6ro9OVyjH07LF.jpg",
       overview:
@@ -261,7 +261,7 @@ var films = [
       genres: ["Action"],
    },
    {
-      id: "504172",
+      id: 504172,
       title: "The Mule",
       poster: "https://image.tmdb.org/t/p/w500/klazQbxk3yfuZ8JcfO9jdKOZQJ7.jpg",
       overview:
@@ -270,7 +270,7 @@ var films = [
       genres: ["Crime", "Comedy"],
    },
    {
-      id: "527729",
+      id: 527729,
       title: "Asterix: The Secret of the Magic Potion",
       poster: "https://image.tmdb.org/t/p/w500/wmMq5ypRNJbWpdhC9aPjpdx1MMp.jpg",
       overview:
@@ -279,7 +279,7 @@ var films = [
       genres: ["Animation", "Family", "Comedy", "Adventure"],
    },
    {
-      id: "118340",
+      id: 118340,
       title: "Guardians of the Galaxy",
       poster: "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
       overview:
@@ -288,7 +288,7 @@ var films = [
       genres: [],
    },
    {
-      id: "411728",
+      id: 411728,
       title: "The Professor and the Madman",
       poster: "https://image.tmdb.org/t/p/w500/gtGCDLhfjW96qVarwctnuTpGOtD.jpg",
       overview:
@@ -297,7 +297,7 @@ var films = [
       genres: ["Drama", "History", "Mystery", "Thriller"],
    },
    {
-      id: "527641",
+      id: 527641,
       title: "Five Feet Apart",
       poster: "https://image.tmdb.org/t/p/w500/kreTuJBkUjVWePRfhHZuYfhNE1T.jpg",
       overview:
@@ -306,7 +306,7 @@ var films = [
       genres: ["Romance", "Drama"],
    },
    {
-      id: "576071",
+      id: 576071,
       title: "Unplanned",
       poster: "https://image.tmdb.org/t/p/w500/tvCtAz8z5tF49a7q9RRHvxiTjzv.jpg",
       overview:
@@ -315,7 +315,7 @@ var films = [
       genres: ["Drama"],
    },
    {
-      id: "283995",
+      id: 283995,
       title: "Guardians of the Galaxy Vol. 2",
       poster: "https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
       overview:
@@ -324,7 +324,7 @@ var films = [
       genres: ["Action", "Adventure", "Comedy", "Science Fiction"],
    },
    {
-      id: "464504",
+      id: 464504,
       title: "A Madea Family Funeral",
       poster: "https://image.tmdb.org/t/p/w500/sFvOTUlZrIxCLdmz1fC16wK0lme.jpg",
       overview:
@@ -333,7 +333,7 @@ var films = [
       genres: ["Comedy"],
    },
    {
-      id: "428078",
+      id: 428078,
       title: "Mortal Engines",
       poster: "https://image.tmdb.org/t/p/w500/gLhYg9NIvIPKVRTtvzCWnp1qJWG.jpg",
       overview:
@@ -342,7 +342,7 @@ var films = [
       genres: ["Adventure", "Fantasy"],
    },
    {
-      id: "460539",
+      id: 460539,
       title: "Kuppathu Raja",
       poster: "https://image.tmdb.org/t/p/w500/wzLde7keWQqWA0CJYVz0X5RVKjd.jpg",
       overview:
@@ -351,7 +351,7 @@ var films = [
       genres: ["Drama"],
    },
    {
-      id: "24428",
+      id: 24428,
       title: "The Avengers",
       poster: "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
       overview:
@@ -360,7 +360,7 @@ var films = [
       genres: ["Documentary"],
    },
    {
-      id: "120",
+      id: 120,
       title: "The Lord of the Rings: The Fellowship of the Ring",
       poster: "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
       overview:
@@ -369,7 +369,7 @@ var films = [
       genres: ["Adventure", "Fantasy", "Action"],
    },
    {
-      id: "671",
+      id: 671,
       title: "Harry Potter and the Philosopher's Stone",
       poster: "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
       overview:
@@ -378,7 +378,7 @@ var films = [
       genres: ["Adventure", "Fantasy", "Family"],
    },
    {
-      id: "500904",
+      id: 500904,
       title: "A Vigilante",
       poster: "https://image.tmdb.org/t/p/w500/x5MSMGVagNINIWyZaxdjLarTDM3.jpg",
       overview: "A vigilante helps victims escape their domestic abusers.",
@@ -386,7 +386,7 @@ var films = [
       genres: ["Thriller", "Drama"],
    },
    {
-      id: "284053",
+      id: 284053,
       title: "Thor: Ragnarok",
       poster: "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
       overview:
@@ -395,7 +395,7 @@ var films = [
       genres: ["Action", "Adventure", "Comedy", "Fantasy"],
    },
    {
-      id: "424694",
+      id: 424694,
       title: "Bohemian Rhapsody",
       poster: "https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
       overview:

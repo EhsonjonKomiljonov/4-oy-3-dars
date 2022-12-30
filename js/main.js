@@ -65,8 +65,10 @@ elHtml.style.paddingRight = "30px";
 elHtml.style.paddingLeft = "30px";
 let elForm = document.querySelector("form");
 let elInput = document.querySelector("input");
+let elBookmarkList = document.querySelector(".js-bookmark-list");
 
 let elSearch = [];
+const bookmarkList = new Set();
 
 elForm.addEventListener("input", (evt) => {
   evt.preventDefault();
@@ -85,15 +87,43 @@ var elRow = document.querySelector(".row");
 
 function filmsFiltered(film) {
   for (i = 0; i < film.length; i++) {
-    var elCol = document.createElement("div");
-    var elBox = document.createElement("div");
-    var elId = document.createElement("p");
-    var elImg = document.createElement("img");
-    var elName = document.createElement("h2");
-    var elGenres = document.createElement("p");
-    var elHeight = document.createElement("p");
+    let elCol = document.createElement("div");
+    let elBox = document.createElement("div");
+    let elId = document.createElement("p");
+    let elImg = document.createElement("img");
+    let elName = document.createElement("h2");
+    let elGenres = document.createElement("p");
+    let elHeight = document.createElement("p");
+    let bookmarkBtn = document.createElement("button");
+
     elRow.classList.add("g-5", "row", "justify-content-center");
     elCol.setAttribute("class", "col-3");
+    elId.classList.add("h4", "text-center", "text-white");
+    elImg.setAttribute("src", film[i].poster);
+    elImg.setAttribute("class", "d-block mx-auto w-100");
+    elName.innerHTML = film[i].title;
+    elName.classList.add("text-warning", "text-center", "h4", "mt-2");
+    elGenres.innerHTML = film[i].genres;
+    elGenres.classList.add("w-100", "text-danger", "text-center");
+    elHeight.innerHTML = film[i].release_date;
+    elHeight.classList.add("text-center", "text-light");
+    bookmarkBtn.setAttribute(
+      "class",
+      "js-bookmark btn bg-transparent text-white border-0"
+    );
+
+    bookmarkBtn.dataset.filmId = film[i].id;
+
+    elBox.style.position = "relative";
+    bookmarkBtn.style.position = "absolute";
+    bookmarkBtn.style.bottom = "20px";
+    bookmarkBtn.style.right = "20px";
+    bookmarkBtn.style.width = "40px";
+    bookmarkBtn.style.padding = "20px";
+    bookmarkBtn.style.backgroundImage = "url('../images/bookmark.svg')";
+    bookmarkBtn.style.backgroundPosition = "center";
+    bookmarkBtn.style.backgroundSize = "40px";
+
     elRow.appendChild(elCol);
     elCol.appendChild(elBox);
     elBox.classList.add(
@@ -108,33 +138,39 @@ function filmsFiltered(film) {
     elBox.appendChild(elName);
     elBox.appendChild(elGenres);
     elBox.appendChild(elHeight);
+    elBox.appendChild(bookmarkBtn);
+
     elId.innerHTML = film[i].id;
-    elId.classList.add("h4", "text-center", "text-white");
-    elImg.setAttribute("src", film[i].poster);
-    elImg.setAttribute("class", "d-block mx-auto w-100");
-    elName.innerHTML = film[i].title;
-    elName.classList.add("text-warning", "text-center", "h4", "mt-2");
-    elGenres.innerHTML = film[i].genres;
-    elGenres.classList.add("w-100", "text-danger", "text-center");
-    elHeight.innerHTML = film[i].release_date;
-    elHeight.classList.add("text-center", "text-light");
   }
 }
+
+const renderBookmarkFilms = (array, node) => {
+  node.innerHTML = "";
+  array.forEach((el) => {
+    const newItem = document.createElement("li");
+    const newText = document.createElement("p");
+    const newDeleteBtn = document.createElement("button");
+
+    newItem.setAttribute(
+      "class",
+      "d-flex align-items-center p-2 bg-primary me-2 mt-2"
+    );
+    newText.setAttribute("class", "my-0 mx-2 text-white");
+    newDeleteBtn.setAttribute("class", "bg-danger border-0 delete-bookmark");
+    newDeleteBtn.dataset.filmId = el.id;
+
+    newText.textContent = el.title;
+    newDeleteBtn.innerHTML = "&times;";
+    newItem.appendChild(newText);
+    newItem.appendChild(newDeleteBtn);
+    node.appendChild(newItem);
+  });
+};
 
 filmsFiltered(films);
 
 const elSelect2 = document.querySelector(".js-select-two");
 elSelect2.addEventListener("change", () => {
-  // if (elSelect2.value == "id") {
-  //   pokemons.sort((a, b) => {
-  //     if (a.name < b.name && a.name > b.name) {
-  //       return 1;
-  //     }
-  //   });
-  // }
-
-  // ------------------------ USTOZ SHU ID DIGANI BOSILGANDA HAMMASI O'Z HOLIGA QAYTADIGAN QILOMADIM☝ FILMSDAYAM SHUNAQA ----------------------
-
   if (elSelect2.value != "id") {
     if (elSelect2.value == "A--Z") {
       const FILMS__SORT = films.sort((a, b) => {
@@ -160,5 +196,27 @@ elSelect2.addEventListener("change", () => {
       });
       displayPokemons(FILMS__SORT);
     }
+  }
+});
+
+elRow.addEventListener("click", (evt) => {
+  if (evt.target.matches(".js-bookmark")) {
+    const filmsId = evt.target.dataset.filmId;
+
+    const findedFilm = films.find((film) => film.id == filmsId);
+
+    bookmarkList.add(findedFilm);
+    renderBookmarkFilms(bookmarkList, elBookmarkList);
+  }
+});
+
+elBookmarkList.addEventListener("click", (evt) => {
+  if (evt.target.matches(".delete-bookmark")) {
+    const filmId = evt.target.dataset.filmId;
+
+    const findedFilm = films.find((film) => film.id == filmId);
+
+    bookmarkList.delete(findedFilm);
+    renderBookmarkFilms(bookmarkList, elBookmarkList);
   }
 });
